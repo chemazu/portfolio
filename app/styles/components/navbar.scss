@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2.5% 5%;
+  // background-color: aqua;
+  height: 70px;
+  align-items: center;
+  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    flex-grow: 0.25;
+    li {
+      text-decoration: none;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

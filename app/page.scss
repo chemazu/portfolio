@@ -1,0 +1,145 @@
+header {
+  display: flex;
+  padding: 2.5% 10%;
+  align-items: center;
+  justify-content: center;
+  background: #fff9f6;
+  .text-content {
+    max-width: 80%;
+    // padding: 5% 7.5%;
+    padding-right: 5%;
+    h2 {
+      font-size: 60px;
+      line-height: 72x;
+    }
+    p {
+      padding-top: 2.5%;
+
+      font-size: 24px;
+      line-height: 36px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      padding-top: 5%;
+    }
+  }
+  .image-wrapper {
+    flex-grow: 1;
+    padding: 4% 8%;
+  }
+}
+.tech-stack {
+  padding: 2.5% 10%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff9f6;
+  p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .tech-stack-wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 10%;
+    .stack-item {
+      padding: 1.5em;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+    }
+  }
+}
+.about {
+  display: flex;
+  padding: 7.5% 10%;
+
+  .text-content {
+    padding: 0% 7.5%;
+    padding-right: 5%;
+    h4 {
+      text-transform: uppercase;
+      padding: 2.5% 0;
+    }
+    h2 {
+      font-size: 45px;
+      line-height: 60x;
+      padding: 2.5% 0;
+    }
+    p {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.portfolio {
+  background: #fff9f6;
+
+  padding: 2.5% 10%;
+  box-sizing: border-box;
+  h4 {
+    text-transform: uppercase;
+    padding: 2.5% 0;
+  }
+  h2 {
+    font-size: 45px;
+    line-height: 60x;
+    // padding: 2.5% 0;
+    padding-bottom: 2.5%;
+  }
+  .portfolio-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.contact {
+  padding: 2.5% 10%;
+  h4 {
+    text-transform: uppercase;
+    padding: 2.5% 0;
+  }
+  h2 {
+    font-size: 45px;
+    line-height: 60x;
+    // padding: 2.5% 0;
+    padding-bottom: 2.5%;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 5px;
+        padding-left: 15px;
+      }
+      .contact-img{
+        padding: 10px;
+        background-color: #fff;
+        border-radius:50% ;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+
+      }
+    }
+  }
+}
