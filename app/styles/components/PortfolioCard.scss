@@ -17,14 +17,12 @@
   }
   .second {
     background-image: url("../../images/second.png");
-
-
   }
   .text-content {
     padding-left: 5%;
     font-size: 18px;
     line-height: 24px;
-    h2{
+    h2 {
       font-size: 36px;
       padding-bottom: 5%;
     }
@@ -34,11 +32,10 @@
       display: flex;
       justify-content: space-between;
       p {
-        padding: .5em;
+        padding: 0.5em;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
- 
       }
     }
     .see-product {
@@ -49,10 +46,10 @@
       div {
         a {
           display: flex;
-      justify-content: space-between;
+          justify-content: space-between;
 
           align-items: center;
-          p{
+          p {
             font-size: 18px;
             margin-right: 10px;
           }
@@ -74,5 +71,33 @@
 
   &:hover {
     background-position: 50% 100%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .parent {
+    flex-direction: column;
+    width: auto;
+    .portfolio-image {
+      min-width: 100%;
+      height: 250px;
+    }
+    .text-content {
+      padding: 10% 0;
+      h2{
+        padding: 5% 0;line-height: 48px;
+
+      }
+      .tech-used {
+        flex-wrap: wrap;
+        p{
+          margin-right: 2%;
+          margin-bottom: 2%;
+
+        }
+      }
+      .see-product{
+        width: 100%;
+      }
+    }
   }
 }

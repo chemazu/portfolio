@@ -92,11 +92,19 @@ export default function Home() {
         </div>
       </section>
       <section className="about">
-        <div className="image-wrapper">
+        <div className="image-wrapper desktop">
           <Image
             src={about}
             alt="about"
             width="400"
+            style={{ borderRadius: "15px" }}
+          />
+        </div>
+        <div className="image-wrapper image-wrapper-mob mobile">
+          <Image
+            src={about}
+            alt="about"
+            width="250"
             style={{ borderRadius: "15px" }}
           />
         </div>
@@ -146,25 +154,34 @@ export default function Home() {
               <p>Lagos, Nigeria</p>
             </div>
           </div>
-          <div className="contact-card">
-            <div className="contact-img">
-              <Image src={linkedin} alt="Email" width="50" />
+          <a
+            href={"https://www.linkedin.com/in/cchemazu/"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div className="contact-card">
+              <div className="contact-img">
+                <Image src={linkedin} alt="Email" width="50" />
+              </div>
+              <div className="contact-text">
+                <p>Linkedin</p>
+                <p>Chukwuemeka Chemazu</p>
+              </div>
             </div>
-            <div className="contact-text">
-              <p>Linkedin</p>
-              <p>Chukwuemeka Chemazu</p>
+          </a>
+          <a href="mailto:chukwuemekachemazu@gmail.com">
+            <div className="contact-card">
+              <div className="contact-img">
+                <Image src={email} alt="Email" width="50" />
+              </div>
+              <div className="contact-text">
+                <a href="mailto:chukwuemekachemazu@gmail.com">
+                  <p>Email me</p>
+                  <p>chukwuemekachemazu@gmail.com</p>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="contact-card">
-            <div className="contact-img">
-              <Image src={email} alt="Email" width="50" />
-            </div>
-            <div className="contact-text">
-              <p>Email me</p>
-              <p>chukwuemekachemazu@gmail.com</p>
-            </div>
-          </div>
+          </a>
         </div>
       </section>
     </main>
