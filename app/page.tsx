@@ -145,15 +145,19 @@ export default function Home() {
         <h4>Contact me</h4>
         <h2>Don't be shy! Hit me up</h2>
         <div className="contact-info">
-          <div className="contact-card">
-            <div className="contact-img">
-              <Image src={location} alt="Email" width="50" />
+          <a href="mailto:chukwuemekachemazu@gmail.com">
+            <div className="contact-card">
+              <div className="contact-img">
+                <Image src={email} alt="Email" width="50" />
+              </div>
+              <div className="contact-text">
+                <a href="mailto:chukwuemekachemazu@gmail.com">
+                  <p>Email me</p>
+                  <p>chukwuemekachemazu@gmail.com</p>
+                </a>
+              </div>
             </div>
-            <div className="contact-text">
-              <p>Location</p>
-              <p>Lagos, Nigeria</p>
-            </div>
-          </div>
+          </a>
           <a
             href={"https://www.linkedin.com/in/cchemazu/"}
             rel="noopener noreferrer"
@@ -169,19 +173,15 @@ export default function Home() {
               </div>
             </div>
           </a>
-          <a href="mailto:chukwuemekachemazu@gmail.com">
-            <div className="contact-card">
-              <div className="contact-img">
-                <Image src={email} alt="Email" width="50" />
-              </div>
-              <div className="contact-text">
-                <a href="mailto:chukwuemekachemazu@gmail.com">
-                  <p>Email me</p>
-                  <p>chukwuemekachemazu@gmail.com</p>
-                </a>
-              </div>
+          <div className="contact-card">
+            <div className="contact-img">
+              <Image src={location} alt="Email" width="50" />
             </div>
-          </a>
+            <div className="contact-text">
+              <p>Location</p>
+              <p>Lagos, Nigeria</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
